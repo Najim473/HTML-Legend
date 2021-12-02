@@ -1,0 +1,43 @@
+/* deful style  */
+*,
+::before,
+::after {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+fieldset {
+  width: 300px;
+  position: relative;
+  height: 300px;
+  border: 1px solid rgb(189, 189, 69);
+  /* color: green; */
+  /* color: yellow; */
+  /* border-color: rgb(57, 169, 57); */
+}
+fieldset::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  /* background: green; */
+  /* color: red; */
+  height: 50px;
+  top: -10%;
+  left: 0%;
+  border: 30px solid rgb(189, 189, 69);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+fieldset > legend {
+  margin-left: 20%;
+  padding: 10px;
+  font-size: 15px;
+  border-color: yellow;
+  /* border: solid; */
+  line-height: 30px;
+}
+.container {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
